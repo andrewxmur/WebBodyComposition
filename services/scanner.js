@@ -114,8 +114,8 @@ const computeData = async (data, age, height, gender, setBodyComposition, setSca
             lbmCoefficient: lbmCoefficient.value.toFixed(2),
             mbr: mbr.value.toFixed(2),
             fat: fat.value.toFixed(2),
-            muscleMass: muscleMass.value.toFixed(2),
-            boneMass: boneMass.value.toFixed(2),
+            muscleMass: muscleMass.value.toFixed,
+            boneMass: boneMass.value,
             visceralFat: visceralFat.value.toFixed(2),
             waterPercentage: waterPercentage.value.toFixed(2),
             bodyType: bodyType.value
