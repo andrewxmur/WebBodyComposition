@@ -34,6 +34,7 @@ export default function Xiaomi() {
                             <div className='flex justify-between '> <div> Bone Mass: </div><div className='font-bold' >{bodyComposition.boneMass} </div> </div>
                             <div className='flex justify-between '> <div> Visceral Fat: </div><div className='font-bold' >{bodyComposition.visceralFat}</div> </div>
                             <div className='flex justify-between '> <div> Body Type: </div><div className='font-bold' >{bodyComposition.bodyType} </div> </div>
+                            <div className='flex justify-between '> <div> Impedance: </div><div className='font-bold' >{bodyComposition.impedance} </div> </div>
                         </div>
                     }
                     <div className='flex flex-wrap mt-10'>
