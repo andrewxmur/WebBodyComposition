@@ -91,34 +91,12 @@ const computeData = async (data, age, height, gender, setBodyComposition, setSca
     })
     if (impedance > 0 && impedance < 3000 && stabilized) {
         const metrics = new Metrics(weight, impedance, height, age, gender);
-        const { bmi,
-            idealWeight,
-            metabolicAge,
-            proteinPercentage,
-            lbmCoefficient,
-            mbr,
-            fat,
-            muscleMass,
-            boneMass,
-            visceralFat,
-            waterPercentage,
-            bodyType } = metrics.getResult();
+
 
         setBodyComposition({
             weight: weight,
-            impedance: impedance,
-            bmi: bmi.value.toFixed(2),
-            idealWeight: idealWeight.value.toFixed(2),
-            metabolicAge: metabolicAge.value.toFixed(2),
-            proteinPercentage: proteinPercentage.value.toFixed(2),
-            lbmCoefficient: lbmCoefficient.value.toFixed(2),
-            mbr: mbr.value.toFixed(2),
-            fat: fat.value.toFixed(2),
-            muscleMass: muscleMass.value,
-            boneMass: boneMass.value,
-            visceralFat: visceralFat.value.toFixed(2),
-            waterPercentage: waterPercentage.value.toFixed(2),
-            bodyType: bodyType.value
+            impedance: impedance
+            
         });
 
         await stopScan({ setScanning, setSerrorMessage });
